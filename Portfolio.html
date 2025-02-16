@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet"href="quer.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Likith</div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Expereince</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Likith</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./source/profile-pic.jpg" alt="likith profile pic" class="pp">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello,I'm</p>
+            <h1 class="title">Likith</h1>
+            <p class="section__text__p2">Student B.E Cse 3rd year</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"onclick="window.open('./source/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1"onclick="location.href='./#contacts'">
+                    Contact info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./source/linkedin.png" 
+                alt="My LinkedIn profile" 
+                class="icon picc" 
+                onclick="location.href='https://linkedin.com/'">
+                <img src="./source/github.jpeg" 
+                alt="My Github profile" 
+                class="icon picc" 
+                onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./source/profile-pic.jpg" 
+                alt="about pic" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./source/education.png" alt="exp pic" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E in Computer Science<br>3rd year</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./source/expereince.png" alt="exp pic" class="icon">
+                        <h3>Expereince</h3>
+                        <p>fresher</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hey there! I’m Likith, a 3rd-year Computer Science Engineering (CSE) student with a curious mind and a passion for creating. When I’m not diving into code, you’ll likely find me hitting the gym or playing football—both of which fuel my energy and focus.
+
+                        I thrive on challenges and have developed a versatile skill set that includes Python, AWS, JavaScript, ReactJS, and SQL. My journey in tech has been an exciting one and I'm excited about what’s next on this journey! </p>
+                </div>
+            </div>
+        </div>
+        <img src="./source/arrow.png" 
+        alt="arrow" class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./source/python.jpeg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./source/cicon.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./source/cpp.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CPP</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./source/sql.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./source/mangodb.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Mango</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./source/js.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./source/rjs.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>ReactJS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./source/aws.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Aws</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./source/github.jpeg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./source/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#project'" />
+      </section>
+    <section id="project">
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="expereince-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-conatiner">
+                        <img src="./source/project1.jpeg" 
+                        ="project1" 
+                        class="project-img">
+                    </div>
+                    <h2 class="expereince-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                            Live Demo
+                        </button>
+                    </div> 
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-conatiner">
+                        <img src="./source/project2.jpeg" 
+                        ="project1" 
+                        class="project-img">
+                    </div>
+                    <h2 class="expereince-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                            Live Demo
+                        </button>
+                    </div> 
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-conatiner">
+                        <img src="./source/project1.jpeg" 
+                        ="project1" 
+                        class="project-img">
+                    </div>
+                    <h2 class="expereince-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com'">
+                            Live Demo
+                        </button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <img src="./source/arrow.png" 
+        alt="arrow" class="icon arrow" 
+        onclick="location.href='./#contacts'">
+    </section>
+    <section id="contacts">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./source/email.png" alt="email img"
+                class="icon contact-iicon">
+                <p><a href="likith297@gmail.com">likith297@gmail</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./source/linkedin.png" alt="email img"
+                class="icon contact-icon">
+                <p><a href="likith297">liki67</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-link">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#expereince">Expereince</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169;2025 Likith. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
